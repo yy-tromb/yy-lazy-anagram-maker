@@ -1,0 +1,35 @@
+body {
+    font-family: -apple-system, sans-serif;
+    color: #1b1b1b;
+}
+
+h1 {
+    text-align: center;
+    margin: 0.2vh 0;
+}
+
+textarea {
+    width: 100%;
+    height: 32vh;
+    font-size: 1.3rem;
+    margin: 0.6vh 0;
+}
+
+#buttons_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* デフォルト（スマホ）: 2x2 */
+    gap: 8px;
+    margin: 0.5vh 1vw;
+}
+
+/* PC（600px以上）の場合の設定 */
+@media (min-width: 600px) {
+    #buttons_container {
+        grid-template-columns: repeat(4, 1fr); /* PC: 4列横並び */
+    }
+}
+
+.exec {
+    font-size: 1.5rem;
+    padding: 1.5vh 1.5vw;
+}
